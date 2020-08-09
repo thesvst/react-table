@@ -1,0 +1,15 @@
+.table_searchbox{
+  border: 0;
+  margin-top: 0px;
+  height: 42px;
+  width: calc(100% - 100px);
+  padding: 0;
+  background: rgba(255,255,255,.7);
+  box-sizing: border-box;
+  padding: 5px 20px;
+  color:#424242;
+  &:focus{
+    border: none;
+    outline: none;
+  }
+}

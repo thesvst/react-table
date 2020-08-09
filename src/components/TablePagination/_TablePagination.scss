@@ -1,0 +1,28 @@
+.pagination{
+  margin:25px 0 0;
+  display: block;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  .pagination_item{
+    width:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid burlywood;
+    border-right-width: 0;
+    color:#424242;
+    transition: .25s ease all;
+    cursor: pointer;
+    &:last-of-type{
+      border-right-width: 1px;
+    }
+    &:hover{
+      background-color: rgba(255,255,255,.3);
+    }
+    &.active{
+      background-color: rgba(255,255,255,.5);
+    }
+  }
+}

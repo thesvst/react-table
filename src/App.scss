@@ -1,0 +1,22 @@
+@import './stylesheets/_mixins.scss';
+
+body{
+  font-family: 'Roboto', sans-serif;
+  @include gradientBackground;
+  #root{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .app_wrapper{
+      width:90%;
+    }
+  }
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 0;
+}

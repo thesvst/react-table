@@ -1,0 +1,43 @@
+@import '../../stylesheets/keyframes';
+.refreshWrapper{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(80vh - 134px);
+  background: rgba(255,255,255,.7);
+  border-top: 1px solid #424242;
+
+}
+.refresh {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  position: relative;
+  -webkit-animation: rotate 1.5s linear infinite;
+  animation: rotate 1.5s linear infinite;
+  &:before, &:after {
+    content: '';
+    display: block;
+  }
+  &:before {
+    border-color: transparent #424242 #424242 #424242;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: .125em;
+    height: 15px;
+    width: 15px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  &:after {
+    border-color: transparent transparent transparent #424242;
+    border-style: solid;
+    border-width: .3125em 0 .3125em .5em;
+    height: 0;
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    width: 0;
+  }
+}

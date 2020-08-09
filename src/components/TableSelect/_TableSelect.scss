@@ -1,0 +1,16 @@
+.table_amountbox{
+  width:100px;
+  border: 0;
+  margin-top: 0px;
+  height: 42px;
+  background: rgba(255,255,255,.7);
+  box-sizing: border-box;
+  padding: 5px 20px;
+  color:#424242;
+  border-left: 1px solid #424242;
+  &:focus{
+    border: none;
+    border-left: 1px solid #424242;
+    outline: none;
+  }
+}
